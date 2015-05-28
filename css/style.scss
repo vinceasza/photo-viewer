@@ -1,0 +1,48 @@
+.wrapper {
+  margin: 10px auto;
+  width: 50%;
+
+}
+
+#photo-viewer {
+  position: relative;
+  background-color: lightgray;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#photo-viewer.is-loading:after {
+  content: 'loading';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#photo-viewer img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+}
+
+a.active {
+  opacity: 0.3;
+}
+
+#thumbnails {
+  margin-top: 4px;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 6px 0 3px 10px;
+  background-color: rgba(66,66,66,0.1);
+  img {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+  }
+}
